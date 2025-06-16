@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnShowMain"
+        android:layout_width="411dp"
+        android:layout_height="76dp"
+        android:background="#00FF00"
+        android:backgroundTint="#00BCD4"
+        android:outlineAmbientShadowColor="#00BCD4"
+        android:outlineSpotShadowColor="#00BCD4"
+        android:shadowColor="#00BCD4"
+        android:text="SHOW MESSAGE"
+        android:textColor="#181717"
+        android:textColorHighlight="#00BCD4"
+        android:textColorHint="#00BCD4"
+        android:textColorLink="#00BCD4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#00BCD4"
+        app:strokeColor="#00BCD4" />
+
+    <TextView
+        android:id="@+id/txtNumMain"
+        android:layout_width="408dp"
+        android:layout_height="587dp"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlusMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowMain" />
+
+    <Button
+        android:id="@+id/btnPlusMain"
+        android:layout_width="410dp"
+        android:layout_height="74dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#00BCD4"
+        android:text="+"
+        android:textColor="#121111"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

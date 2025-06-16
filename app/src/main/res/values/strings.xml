@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">work1</string>
+    <string name="player1Name">player1Name</string>
+    <string name="player2Name">player2Name</string>
+</resources>
