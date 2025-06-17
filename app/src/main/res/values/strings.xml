@@ -2,4 +2,6 @@
     <string name="app_name">work1</string>
     <string name="player1Name">player1Name</string>
     <string name="player2Name">player2Name</string>
+    <string name="pref_file_key">myPrefs</string>
+    <string name="user_name">user_name</string>
 </resources>
