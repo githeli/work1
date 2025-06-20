@@ -39,7 +39,8 @@ public class SharePref extends AppCompatActivity implements View.OnClickListener
     private void checkIfFirstRun() {
         SharedPreferences sharedPref = this.getSharedPreferences(getString(R.string.pref_file_key), MODE_PRIVATE);
         String userName = sharedPref.getString(getString(R.string.user_name),"");
-        if(!userName.equals("")){
+        String userId = sharedPref.getString(getString(R.string.user_id),"");
+        if(!userName.equals("") && !userId.equals("")){
             Intent intent = new Intent(this, FirstXO.class);
             startActivity(intent);
             finish();
@@ -51,11 +52,16 @@ public class SharePref extends AppCompatActivity implements View.OnClickListener
 
         SharedPreferences sharedPref = this.getSharedPreferences(getString(R.string.pref_file_key), MODE_PRIVATE);
 
-        TextView txt = findViewById(R.id.editTextUserName);
-        String uNameFromScreen = txt.getText().toString();
+        TextView txtUname = findViewById(R.id.editTextUserName);
+        String uNameFromScreen = txtUname.getText().toString();
+        TextView txtUid = findViewById(R.id.editTextUserId);
+        String uIdFromScreen = txtUid.getText().toString();
+
         SharedPreferences.Editor edit = sharedPref.edit();
         edit.putString(getString(R.string.user_name),uNameFromScreen);
+        edit.putString(getString(R.string.user_id),uIdFromScreen);
         edit.apply();
+
         Intent intent = new Intent(this, FirstXO.class);
         startActivity(intent);
         finish();

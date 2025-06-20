@@ -7,35 +7,49 @@
     android:layout_height="match_parent"
     tools:context=".SharePref">
 
+    <TextView
+        android:id="@+id/textViewEnterDetails"
+        android:layout_width="395dp"
+        android:layout_height="88dp"
+        android:text="Please enter your details:"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <EditText
         android:id="@+id/editTextUserName"
         android:layout_width="139dp"
         android:layout_height="197dp"
+        android:layout_marginTop="112dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="text"
         android:scrollbarSize="4dp"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="225dp"
+        android:layout_height="84dp"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="text"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489" />
-
-    <TextView
-        android:id="@+id/textViewEnterName"
-        android:layout_width="381dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="1380dp"
-        android:text="Please enter your name"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.628" />
 
     <Button
         android:id="@+id/buttonGame"
@@ -45,8 +59,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUserName"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserId"
+        app:layout_constraintVertical_bias="0.547" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
